@@ -1,3 +1,11 @@
 message: 
   from: 
     client: this is spring boot client 
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: *
+    health:
+      show-details: always
